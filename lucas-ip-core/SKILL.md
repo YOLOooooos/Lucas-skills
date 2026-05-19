@@ -9,9 +9,10 @@ description: Use when Codex needs the core personal-IP positioning, brand voice,
 
 ## 使用方式
 
-1. 先读取 `../shared/lucas-brand-core.md`。
-2. 用它判断 Lucas 应该说什么、不说什么，以及一个来源信号能否变成实验。
-3. 如果用户要生产具体平台内容，转交或建议使用对应平台 Skill：
+1. 先读取 `references/lucas-brand-core.md`。
+2. 再读取 `references/lucas-output-location-rules.md`。
+3. 用它们判断 Lucas 应该说什么、不说什么，以及一个来源信号能否变成实验。
+4. 如果用户要生产具体平台内容，转交或建议使用对应平台 Skill：
 
 | 需求 | 使用 Skill |
 |---|---|
@@ -27,9 +28,22 @@ description: Use when Codex needs the core personal-IP positioning, brand voice,
 |---|---|
 | `lucas-ip-core` | 定义 Lucas 是谁、相信什么、怎么判断选题 |
 | 平台 Skill | 负责不同平台的交付物、素材规范和内容结构 |
-| `shared/lucas-brand-core.md` | 共享人设、选题漏斗、语言边界和质检清单 |
+| `references/lucas-brand-core.md` | 共享人设、选题漏斗、语言边界和质检清单 |
 
 不要在平台 Skill 里重新发明 Lucas 的人格。平台 Skill 必须继承共享品牌内核，再做平台化生产。
+
+## 内容落盘规则
+
+平台内容一旦进入生产阶段，默认不仅要在对话里给出结果，还要按 `references/lucas-output-location-rules.md` 落盘到 `Lucas-skills/` 的平级目录。
+
+| 平台 | 默认输出目录 |
+|---|---|
+| 小红书 | `xiaohongshu/YYYYMMDD/文章标题或主题/` |
+| 公众号 | `wechat/YYYYMMDD/文章标题或主题/` |
+| 抖音 | `douyin/YYYYMMDD/文章标题或主题/` |
+
+除非用户明确要求只看草稿、不写文件，否则不要只停留在对话输出。
+同一天内有多篇内容时，每篇都必须使用自己的独立子目录，资产不要混放。
 
 ## 外部工具 Skill 复用原则
 

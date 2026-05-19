@@ -9,7 +9,8 @@ description: Use when Codex creates Xiaohongshu content for "Lucas的AI实验室
 
 ## 必读
 
-先读取 `../shared/lucas-brand-core.md`，继承 Lucas 的人设、选题漏斗和语言边界。
+先读取 `references/lucas-brand-core.md`，继承 Lucas 的人设、选题漏斗和语言边界。
+再读取 `references/lucas-output-location-rules.md`，按平级目录规则落盘最终产物。
 
 ## 小红书定位
 
@@ -47,6 +48,15 @@ description: Use when Codex creates Xiaohongshu content for "Lucas的AI实验室
 | 截图清单 | 需要实际截哪些界面和结果 |
 | 外部工具建议 | 是否建议使用 `baoyu-image-cards`、`baoyu-cover-image` 或其他工具 |
 | 评论引导 | 一个能引出问题或收藏的结尾 |
+
+## 落盘要求
+
+生成小红书内容时，默认除了在对话中展示，还要把最终产物写入：
+
+- `xiaohongshu/YYYYMMDD/文章标题或主题/index.md`
+
+目录与 `Lucas-skills/` 平级，不要写入 `Lucas-skills/` 目录内部。若目录不存在，先创建再写入。
+同一天内如果有多篇笔记，每篇必须单独建目录，封面、配图、截图和文案资产都放在该笔记自己的目录里。
 
 ## 笔记结构
 
