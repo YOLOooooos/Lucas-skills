@@ -1,0 +1,4 @@
+display_name: Lucas IP Core
+short_description: 管理 Lucas的AI实验室 的个人IP定位、人设、选题原则和风格边界。
+default_prompt: 帮我用 Lucas的AI实验室 的个人IP内核判断这个选题或内容方向是否成立，并给出平台化建议。
+
